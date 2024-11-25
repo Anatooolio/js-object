@@ -51,3 +51,10 @@ function deepIsEqual(obj1, obj2) {
     return _.isEqual(first, second)
 }
 // console.log(deepIsEqual({ a: 1, b: { c: 1 } }, { a: 1, b: { c: 1 } }))
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+function makePairs(obj) {
+    return Object.entries(obj)
+}
+// console.log(makePairs({ a: 1, b: 2 }))
