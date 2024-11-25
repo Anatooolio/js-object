@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 //Проверяем является ли элемент объектом, а не массивом
 
 function isObj(obj) {
@@ -40,3 +42,12 @@ function countLetters(str) {
 }
 // console.log(countLetters('Hello world!'))
 // console.log(countLetters('Aircraft'))
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
+function deepIsEqual(obj1, obj2) {
+    const first = obj1
+    const second = obj2
+    return _.isEqual(first, second)
+}
+// console.log(deepIsEqual({ a: 1, b: { c: 1 } }, { a: 1, b: { c: 1 } }))
