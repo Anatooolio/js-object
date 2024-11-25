@@ -24,3 +24,19 @@ function isEqual(obj1, obj2) {
 
 //--------------------------------------------------------------------------------------------------------------------------------
 
+function countLetters(str) {
+	const obj = {}
+	const arr = str.toLowerCase().trim().split('')
+	arr.map(element => {
+		if (element !== ' ' && element !== '!') {
+			if (obj[element] === undefined) {
+				obj[element] = 1
+			} else {
+				obj[element] += 1
+			}
+		}
+	})
+	// console.log(obj) // Показывает результат
+}
+// console.log(countLetters('Hello world!'))
+// console.log(countLetters('Aircraft'))
